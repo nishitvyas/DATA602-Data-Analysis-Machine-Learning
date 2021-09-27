@@ -1,2 +1,2 @@
 # DATA602
-This repository has the assignments and classwork
+I have made this repository on the assignments and classwork given in Master's of Data Science. This repositroy is of "Introduction to Data Analysis and Machine Learning".
