@@ -1,4 +1,4 @@
-# Model Evaluation on Logistic Regression {Work in Progress}
+# Model Evaluation on Logistic Regression
 This project is about the classification of the records having Diabetes or not. The project is an example of Supervised learning as we have the target_values. On the basis of the 8 features, it is decided whether the person has diabetes. The Logistic Regression model is used for this dataset.
 The project contains the visualization in the form of text and various graphs, the Python libraries which are used in this notebook are Numpy, Pandas, Matplotlib, Seaborn.
 The modelling is done with the help of several modules of Scikit-Learn package.
