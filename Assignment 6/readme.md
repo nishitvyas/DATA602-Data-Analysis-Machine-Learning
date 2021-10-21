@@ -26,7 +26,7 @@ We segemented our experiment into three parts:
 
 
 # Predictions Using this Model
-From the classification report obtained, we got the confusion matrix '[[TP:85,FN:12][FP:28,TN:29]]' , there are still considerable False Positives which should be classified as True Positives as per our aim to capture maximum positive cases. 
+From the classification report obtained, we got the confusion matrix '[[TP:85,FN:12][FP:28,TN:29]]' , there are still considerable False Negatives which should be classified as True Positives as per our aim to capture maximum positive cases. 
 
 # Potential Next Steps and Follow-ups
 We can try adding more positive class records in the data to create balance among the classes to reach to a better metric score.
