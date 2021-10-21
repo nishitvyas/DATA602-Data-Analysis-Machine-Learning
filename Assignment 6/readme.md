@@ -10,7 +10,6 @@ The modelling is done with the help of several modules of Scikit-Learn package.
 The aim of this project is create a Logistic Regression/Classification model which will predict whether the person has Diabetes or not on the basis of 8 features. We will be tuning the model for obtaining true predictions. In this project we are focussing on the Recall metric, we will be able to capture all the actual positive Diabetic cases. The reason for this is because the more the accurate positive cases will be found earlier their treatments will be done. 
 
 
-
 # Exploratory Analysis Findings
 The imbalance among the class is found as the number of positive cases are half of the number of negative cases, which is one of the drawback why we couldn't reach to a better accuracy.
 In the dataset, there were few records where the values in columns such as 'body mass index', 'serum insulin', 'diastolic blood pressure', 'triceps skinfold thickness' are zero which seems unreal. We have replaced these values keeping the relevancy of the values with respect to their classes(Positive/Negative). These unrealistic values caused a small distribution at extremeties, we have addressed the values which were zeros but for the values on the right extremity, they hve kept the same keeping in mind that those can be real values.
@@ -18,11 +17,14 @@ Overall, there were no missing values found in the data.
 The values in the data weren't standardized so they are brought to the standard values in the modelling pipeline.
 
 
+# Classification Results
 
-# Regression Results
-We got the R-squared as 0.76 which means we were able to capture the 76% variance of data. We came to know that the city in which the house is constructed is one of the major driver or we can say the area in which the house is, plays an important role. Other factors such as area-house, number of bedrooms, resale, rera are also the driving factors. We observed that the area column was creating multi-collinearity, removing it from the features helped increasing the R-squared by 10%.
-# Predictions Using this Dataset
-We predicted the house prices using Linear Regression with the score of 45% in the training data and 47% on test data.
+In the first model where the data cleaning wasn't done, the AUROC(Area Under ROC) was 0.78 with the reacall of 0.47 for positive cases. 
+After cleaning and applying the Grid Search for tuning, we got to know that the 7 features are most affecting out of 8 which tend to give a better recall value and also the AUROC, recall of 0.51 for positive and 0.88 for negative class was achieved along with the AUROC of 0.8374.
+
+
+# Predictions Using this Model
+From the classification report obtained, we got the confusion matrix '[[TP:85,FN:12][FP:28,TN:29]]' , there are still considerable False Positives which should be classified as True Positives as per our aim to capture maximum positive cases. 
 
 # Potential Next Steps and Follow-ups
-We want to categorised the cities into the 'tier level' so that the categorisation becomes easy and check how the model works.
+We can try adding more positive class records in the data to create balance among the classes to reach to a better metric score.
