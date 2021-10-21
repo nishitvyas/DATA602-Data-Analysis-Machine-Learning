@@ -11,16 +11,16 @@ The aim of this project is create a Logistic Regression/Classification model whi
 
 
 # Exploratory Analysis Findings
-The imbalance among the class is found as the number of positive cases are half of the number of negative cases, which is one of the drawback why we couldn't reach to a better accuracy.
-In the dataset, there were few records where the values in columns such as 'body mass index', 'serum insulin', 'diastolic blood pressure', 'triceps skinfold thickness' are zero which seems unreal. We have replaced these values keeping the relevancy of the values with respect to their classes(Positive/Negative). These unrealistic values caused a small distribution at extremeties, we have addressed the values which were zeros but for the values on the right extremity, they hve kept the same keeping in mind that those can be real values.
-Overall, there were no missing values found in the data. 
-The values in the data weren't standardized so they are brought to the standard values in the modelling pipeline.
+- The imbalance among the class is found as the number of positive cases are half of the number of negative cases, which is one of the drawback why we couldn't reach to a better accuracy.
+- In the dataset, there were few records where the values in columns such as 'body mass index', 'serum insulin', 'diastolic blood pressure', 'triceps skinfold thickness' are zero which seems unreal. We have replaced these values keeping the relevancy of the values with respect to their classes(Positive/Negative). These unrealistic values caused a small distribution at extremeties, we have addressed the values which were zeros but for the values on the right extremity, they have kept the same keeping in mind that those can be real values.
+- Overall, there were no missing values found in the data. 
+- The values in the data weren't standardized so they are brought to the standard values in the modelling pipeline.
 
 
 # Classification Results
 
-In the first model where the data cleaning wasn't done, the AUROC(Area Under ROC) was 0.78 with the reacall of 0.47 for positive cases. 
-After cleaning and applying the Grid Search for tuning, we got to know that the 7 features are most affecting out of 8 which tend to give a better recall value and also the AUROC, recall of 0.51 for positive and 0.88 for negative class was achieved along with the AUROC of 0.8374.
+- In the first model where the data cleaning wasn't done, the AUROC(Area Under ROC) was 0.78 with the reacall of 0.47 for positive cases. 
+- After cleaning and applying the Grid Search for tuning, we got to know that the 7 features are most affecting out of 8 which tend to give a better recall value and also the AUROC, recall of 0.51 for positive and 0.88 for negative class was achieved along with the AUROC of 0.8374.
 
 
 # Predictions Using this Model
