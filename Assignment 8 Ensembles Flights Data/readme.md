@@ -20,9 +20,9 @@ Predicting the delay of the flight based on the flight carrier details, weather 
 We segemented our experiment into three parts:
 - In the first part we have implemented the cross validation score on Logistic Regression(LogR), Decision Tree(DT) and Support Vector Machine(SVM). We got good accuracy on SVM but the deviation was of 2%, for DT and LogR it was 64% for both and the deviation of 2% and 1% repectively. 
 - For the second part, we passed three models into an ensemble where the voting was selected as 'hard', since we are concerned about the accuracy, probability can be opted out.
-- In the third part, we performed the GridSearch on the Ensemble to get the best estimator and its score, which was 67% (max of all)
+- In the third part, we performed the GridSearch on the Ensemble to get the best estimator and its score, which was 67% (__max of all__)
 - Lastly, we performed the AdaBoosting Classification where we kept 500 estimators but we got 64% which wasn't that effective as GridSearch.
-- As conclusion, we should consider the Ensemble with the GridSearch as it gave maximum accuracy of all and also the deviation was 0%, it took more computations than other models.
+- As __conclusion__, we should consider the Ensemble with the GridSearch as it gave maximum accuracy of all and also the deviation was 0%, it took __more computations__ than other models.
 
 
 # Potential Next Steps and Follow-ups
