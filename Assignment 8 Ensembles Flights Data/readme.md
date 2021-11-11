@@ -22,6 +22,7 @@ We segemented our experiment into three parts:
 - For the second part, we passed three models into an ensemble where the voting was selected as 'hard', since we are concerned about the accuracy, probability can be opted out.
 - In the third part, we performed the GridSearch on the Ensemble to get the best estimator and its score, which was 67% (max of all)
 - Lastly, we performed the AdaBoosting Classification where we kept 500 estimators but we got 64% which wasn't that effective as GridSearch.
+- As conclusion, we should consider the Ensemble with the GridSearch as it gave maximum accuracy of all and also the deviation was 0%, it took more computations than other models.
 
 
 # Potential Next Steps and Follow-ups
